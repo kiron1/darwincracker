@@ -1,0 +1,11 @@
+.DS_Store
+/.build
+DarwinCracker
+/Packages
+/*.xcodeproj
+xcuserdata/
+DerivedData/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+*.machine
+Package.resolved
+README.html
