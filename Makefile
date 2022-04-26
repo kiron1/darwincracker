@@ -11,7 +11,7 @@ all:
 	cp .build/x86_64-apple-macosx/${CONFIG}/DarwinCracker DarwinCracker
 	codesign -s "${CODESIGN_IDENTITY}" --entitlements DarwinCracker.entitlements DarwinCracker
 
-README.html: README.md www/clean.css Makefile
+README.html: README.md  Makefile
 	pandoc -s -f markdown+smart --toc --metadata pagetitle="DarwinCracker" --to=html5 README.md -o "$@"
 
 .PHONY: all
